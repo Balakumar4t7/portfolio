@@ -6,11 +6,11 @@ body{
     background-color: #f5f6fa;
      margin:0px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
         padding: 10px;
     }
-}
+} */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body{
 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #header {
         flex-direction: column;
         align-items: center;
@@ -42,7 +42,7 @@ body{
     #nav {
         margin-top: 10px;
     }
-}
+} */
 
 #header a{
     color:white;
@@ -184,18 +184,18 @@ button:hover{
 }
 #project{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 40px;
     
    
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #project {
         grid-template-columns: 1fr; /* single column on phone */
-    }
-}
+    /* }
+} */ 
 #proh2{
     text-align:center;
     font-size:58px;
@@ -203,11 +203,11 @@ button:hover{
     color:rgb(105, 104, 104);
     margin-bottom: 0px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #proh2 {
         font-size: 32px;
     }
-}
+} */
 .pro{
     display: flex;
     flex-direction: column;
