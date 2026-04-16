@@ -16,13 +16,16 @@ body{
 
 #header{
     margin:0px;
-    grid-template-columns: repeat(auto-fit, minmax(250px));
+    grid-template-columns: repeat(auto-fit);
     background-color: #1f2346;
     color:rgb(255, 255, 255);
-    display:grid;
-  
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     padding:0px 20px;
-  
+     position: sticky;
+    top: 0;
+    z-index: 1000;
 
 }
 
