@@ -16,21 +16,23 @@ body{
 
 #header{
     margin:0px;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     background-color: #1f2346;
     color:rgb(255, 255, 255);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0px 20px;
      position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
 
 }
 
 
 #header a{
+
     color:white;
 
 }
@@ -38,18 +40,20 @@ body{
     color:rgb(201, 197, 197);
 }
 #nav{
-    display:flex;
-    gap:25px;
+   display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 a{
+    font-size: clamp(14px, 3vw, 20px);
     cursor:pointer;
     font-size:20px;
 }
 h1{
         color:rgb(255, 255, 255);
         margin-bottom:10px;
-        font-size:30px;
+        font-size: clamp(24px, 5vw, 30px);
 }
 p{
     margin-top:0px;
@@ -65,8 +69,8 @@ p{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:300px;
-    
+    min-height:300px;
+     padding: 60px 20px;
 }
 button{
     padding:5px 12px 5px 12px;
@@ -83,10 +87,12 @@ button:hover{
 
 #body{
     display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items:center;
-    height:350px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
 }
 #skills{
     padding: 50px 10px;
@@ -100,43 +106,54 @@ button:hover{
 }
 
 #front{
-     display:flex;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: min(100%, 400px);
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 400px;
+    height: auto;
+    padding: 30px 20px;
+
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+#back{
+   display:flex;
      background-color:white;   
      flex-direction:column;
     justify-content:center;
     align-items:center;
-     border-radius:15px;
-    height:240px;
-    width:400px;
+    
+     width: min(100%, 400px);
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 400px;
+    height: auto;
+    padding: 30px 20px;
   
     box-shadow: 0px 4px 8px rgba(0, 0, 0,0.3);
 }
-#back{
-    display:flex;  
-    display:flex;
-     background-color:white;  
-     flex-direction:column;
-    justify-content:center;
-    align-items:center;
-     border-radius:15px;
-    height:240px;
-    width:400px;
-    
-    box-shadow:0px 4px 8px rgba(0, 0, 0,0.3);
-}
 #db{
     
-     display:flex;   
+      display:flex;
+     background-color:white;   
      flex-direction:column;
-     display:flex;
-     background-color:white; 
     justify-content:center;
     align-items:center;
-     border-radius:15px;
-    height:240px;
-    width:400px;
-   
-    box-shadow:0px 4px 8px rgba(0, 0, 0,0.3);
+    
+     width: min(100%, 400px);
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 400px;
+    height: auto;
+    padding: 30px 20px;
+  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0,0.3);
 }
 .circle{
     
@@ -165,7 +182,7 @@ button:hover{
 }
 #about h1{
     color:rgb(90, 87, 87);
-    font-size:70px;
+    font-size: clamp(36px, 8vw, 70px);
 
 }
 #project{
@@ -202,7 +219,7 @@ button:hover{
     text-align:center;
 }
 .pro h4{
-    padding-right:300px;
+    padding-right:0px;
 
 }
 .pa{
