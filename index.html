@@ -1,133 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balakumar T. — Full-Stack Engineer</title>
+<meta name="description" content="Balakumar T. — Full-Stack Engineer building with Java, Spring Boot and React.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="header">
-        <div>
-            <h1 id="name">Balakumar T.</h1>
-        </div>
-        <div id="nav">
-             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-       
+<div class="noise"></div>
+
+<header class="topbar">
+  <a href="#home" class="brand">BT<span class="brand-dot">.</span></a>
+
+  <nav class="nav" id="siteNav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a class="topbar-cta" href="mailto:balakumarbkt2005@gmail.com">Say hello →</a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HOME ============ -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="status-pill"><span class="dot"></span>200 OK — open to internships &amp; entry‑level roles</p>
+
+      <h1 class="hero-title">
+        Balakumar T.<br>
+        <span class="hero-title-sub">Full&#8209;Stack Engineer</span>
+      </h1>
+
+      <p class="hero-lede">
+        I build web applications end to end — REST APIs in <strong>Spring Boot</strong>,
+        interfaces in <strong>React</strong>, data modelled in <strong>SQL / MongoDB</strong>.
+        Final-year CSE student, currently deep in interview prep and looking for
+        my first full-time engineering role.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View my work</a>
+        <a href="https://github.com/Balakumar4t7" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      </div>
     </div>
 
-    <div id="home">
+    <div class="hero-diagram" aria-hidden="true">
+      <svg viewBox="0 0 460 300" class="stack-svg">
+        <path class="stack-line" d="M100,60 C170,60 150,150 230,150" />
+        <path class="stack-line" d="M230,150 C310,150 290,60 360,60" />
+        <path class="stack-line" d="M230,150 L230,235" />
+
+        <g class="stack-node">
+          <rect x="30" y="30" width="140" height="60" rx="10"/>
+          <text x="100" y="55">React JS</text>
+          <text x="100" y="74" class="stack-node-sub">UI Layer</text>
+        </g>
+
+        <g class="stack-node stack-node-mid">
+          <rect x="160" y="120" width="140" height="60" rx="10"/>
+          <text x="230" y="145">Spring Boot</text>
+          <text x="230" y="164" class="stack-node-sub">REST API</text>
+        </g>
+
+        <g class="stack-node">
+          <rect x="290" y="30" width="140" height="60" rx="10"/>
+          <text x="360" y="55">HTML/CSS/JS</text>
+          <text x="360" y="74" class="stack-node-sub">UI Layer</text>
+        </g>
+
+        <g class="stack-node stack-node-db">
+          <rect x="160" y="235" width="140" height="55" rx="10"/>
+          <text x="230" y="258">MySQL / Mongo</text>
+          <text x="230" y="276" class="stack-node-sub">Data</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section section-light">
+    <p class="eyebrow">GET /about</p>
+    <h2 class="section-title">How I got here, and where I'm headed</h2>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>
+          I'm a final-year Computer Science &amp; Engineering student, and somewhere between
+          my first "Hello World" and now I decided the backend is where I'm most at home —
+          designing the API, shaping the data model, then wiring a React interface on top
+          of it.
+        </p>
+        <p>
+          Most recently I've been through Cognizant's Digital Nurture program, going deep
+          on Spring Core, Spring Boot, JPA/Hibernate, REST, microservices and design
+          patterns — and putting each of them into practice through the projects below
+          rather than leaving them as slides.
+        </p>
+        <p>
+          Right now I'm interview-ready and actively looking for internship or
+          entry-level Full-Stack (Java) opportunities where I can keep building.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="tags">
+            <li>React JS</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="tags">
+            <li>Java</li><li>Spring Boot</li><li>Spring MVC</li><li>REST APIs</li><li>JPA / Hibernate</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Tools</h3>
+          <ul class="tags">
+            <li>MySQL</li><li>MongoDB</li><li>Git &amp; GitHub</li><li>Postman</li><li>Maven</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work" class="section section-dark">
+    <p class="eyebrow eyebrow-light">GET /projects</p>
+    <h2 class="section-title section-title-light">Things I've shipped</h2>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project-index">01</div>
+        <div class="project-body">
+          <h3>Hospital Appointment Booking System</h3>
+          <p class="project-desc">
+            A full-stack app for managing a clinic's day-to-day — registering doctors and
+            patients, and booking appointments between them. Built to practice a real
+            end-to-end flow: React frontend talking to a Spring Boot REST API.
+          </p>
+          <ul class="project-points">
+            <li>Spring Boot REST APIs for full CRUD on doctors and patients</li>
+            <li>Appointment booking flow that links a patient to a doctor with date &amp; time</li>
+            <li>React frontend to add/manage doctors and patients, and view booked appointments</li>
+          </ul>
+          <ul class="tags tags-mono">
+            <li>React JS</li><li>Spring Boot</li><li>REST API</li><li>Java</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Balakumar4t7" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">02</div>
+        <div class="project-body">
+          <h3>Student Management System</h3>
+          <p class="project-desc">
+            A lighter, focused build to nail the fundamentals — a REST API in Spring Boot
+            handling full CRUD on student records, with a vanilla JS frontend
+            consuming it directly with <code>fetch()</code>.
+          </p>
+          <ul class="project-points">
+            <li>Spring Boot REST endpoints for Create, Read, Update and Delete on student records</li>
+            <li>HTML/CSS/JS frontend — dynamic table rendering and form handling, no framework</li>
+            <li>Clean controller–service–repository layering on the backend</li>
+          </ul>
+          <ul class="tags tags-mono">
+            <li>JavaScript</li><li>HTML/CSS</li><li>Spring Boot</li><li>REST API</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Balakumar4t7" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">03</div>
+        <div class="project-body">
+          <h3>Accelerated High-Fidelity Rendering: Metaheuristic Approach To Neural Radiance Fields Optimization</h3>
+          <p class="project-desc">
         
-             <h1>Hi, I'm a Developer</h1>
-            <p>I build web apps with Java, React & Spring Boot</p>
-
-            <a href="https://github.com/Balakumar4t7" target="_blank"> <button>View my work</button></a>
-
+Enhanced NeRF-based 3D scene reconstruction by applying metaheuristic optimization techniques resulting in better rendering quality and faster convergence.
+Benchmarked GA, DE, PSO, CMA-ES, and random search on the Fox dataset, identifying CMA-ES as the top performer (PSNR 15.19) through adaptive covariance-based exploration of the hyperparameter search space..
+          </p>
+          
+          <ul class="tags tags-mono">
+            <li>Instant-NGP (NeRF)</li><li> CUDA</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Balakumar4t7" target="_blank" rel="noopener">Code ↗</a>
+          </div>
         </div>
+      </article>
+
     </div>
-    <section id="skills">
-    <h2>What I Do</h2>
 
+    <p class="more-work">
+      More on <a href="https://github.com/Balakumar4t7" target="_blank" rel="noopener">GitHub ↗</a>
+    </p>
+  </section>
 
-    <div id="body">
-        <div id="front">
-            <div style="background-color:lavender" class="circle"></div>
-            <p class="para">Frontend</p>
-            <p class="para">HTML, CSS, JavaScript, React JS</p>
-        </div>
-        <div id="back">
-            <div style="background-color:rgb(190, 190, 231)" class="circle"></div>
-            <p class="para">Backend</p>
-            <p class="para">Core Java, Spring Boot</p>
-        </div>
-        <div id="db">
-            <div style="background-color:rgb(195, 195, 253)" class="circle"></div>
-            <p class="para">Database</p>
-            <p class="para">MySQL,Mongo DB</p>
-        </div>
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-contact">
+    <p class="eyebrow">POST /contact</p>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="contact-lede">
+      I'm currently looking for internships and entry-level opportunities.
+      The fastest way to reach me is email.
+    </p>
+
+    <a class="btn btn-primary btn-lg" href="mailto:balakumarbkt2005@gmail.com?subject=Opportunity&body=Hi Balakumar,">
+      balakumarbkt2005@gmail.com
+    </a>
+
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/bala-kumarr-/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Balakumar4t7" target="_blank" rel="noopener">GitHub</a>
     </div>
-    </section>
+  </section>
 
-    <hr>
-        <div id="about">
-                <h1>About Me</h1>
-                <div class="abme">
-                <p>I’m a Full Stack Developer focused on building clean and responsive web applications. 
-                    I work with HTML, CSS, JavaScript, React, and Java, and I enjoy
-                     developing scalable backend systems using Spring Boot.</p>
-                     </div>
+</main>
 
-                     <div class="abme">
-                     <p>
-                        Currently, I’m improving my frontend and 
-                        loud skills while preparing for software development
-                        roles and looking for opportunities to grow as a developer.</p>
-                        </div>
-        </div>
-        <hr>
-        <h2 id="proh2">Projects </h2>
-        <div id="project">
-            
-            <div class="pro">
-                    <h2>Deepfake Detection System</h2>
-                    <h3>Tech Stack</h3>
-                    <p class="para">Python, TensorFlow, EfficientNet-B0, Bi-GRU</p>
-                     <h4>Key Points</h4>
+<footer class="footer">
+  <span>Balakumar T. — Chennai, India</span>
+  <span>Built with HTML, CSS &amp; JS</span>
+</footer>
 
-                     <p class="pa">• Built a deep learning model combining EfficientNet-B0 and Bi-GRU for detecting deepfake videos  
- </p>
-                        
-                     <p class="pa">
-                        • Achieved around 60% validation accuracy on test datasets    </p>
-
-                     <p class="pa"> 
-                    • Focused on solving digital misinformation and media authenticity challenges  </p>
-
-            </div>
-
-
-            <div class="pro">
-                    <h2 id="h2para">Optimized NeRF Rendering using Genetic Algorithm</h2>
-                    <h3>Tech Stack</h3>
-                    <p class="para">Python, Genetic Algorithm</p>
-                    <h4>Key Points</h4>
-
-                    <p class="pa">• Applied Genetic Algorithms to optimize NeRF rendering performance  </p>
-                    <p class="pa">• Reduced training time while maintaining high rendering fidelity    </p>
-                        <p class="pa">• Awarded Innovation Excellence Award for best mini project       </p>
-            </div>
-
-
-            <div class="pro">
-                    <h2>Personal Portfolio Website</h2>
-                    <h3>Tech Stack</h3>
-                    <p class="para">HTML, CSS, JavaScript</p>
-                     <h4>Key Points</h4>
-
-                     <p class="pa">• Designed and developed static web pages using HTML and CSS  </p>
-
-                         <p class="pa">• Implemented responsive layout and modern UI design principles      </p>
-                          <p class="pa">• Practiced core frontend concepts like Flexbox and Grid        </p>
-
-
-            </div>
-
-        </div>
-
-        <div id="contact">
-            <h2 >Contact Me</h2>
-            <p >I’m currently looking for internships and entry-level opportunities. Feel free to connect with me.</p>
-            <a href="mailto:balakumarbkt2005@gmail.com?subject=Job Opportunity&body=Hi Balakumar"> gmail : balakumarbkt2005@gmail.com</a>
-            <a href="https://www.linkedin.com/in/bala-kumarr-/" target="_blank">LinkedIn</a>
-            <a href= "https://github.com/Balakumar4t7"  target="_blank">github</a>
-        </div>
-
-    
+<script src="script.js"></script>
 </body>
 </html>
